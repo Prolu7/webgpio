@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>GPIO REMOTE</title>
+                <link rel="stylesheet" href="index.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+                <div id="title" class="side">
+                        <h1>GPIO REMOTE</h1>
+                        <button onclick="stop()">Kill server</button>
+                </div>
+                <div class="vertical">
+                        <input type="range" oninput="sendUpdateToWebsocket()" min="0" max="100" value="0" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="checkbox" oninput="sendUpdateToWebsocket()" value="true" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="checkbox" oninput="sendUpdateToWebsocket()" value="true" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="range" oninput="sendUpdateToWebsocket()" min="0" max="100" value="0" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="range" oninput="sendUpdateToWebsocket()" min="0" max="100" value="0" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="range" oninput="sendUpdateToWebsocket()" min="0" max="100" value="0" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+                <div class="vertical">
+                        <input type="range" oninput="sendUpdateToWebsocket()" min="0" max="100" value="0" class="value">
+                        <p>Server message: <b class="status">Not updated yet.</b></p>
+                </div>
+        <script src="index.js"></script>
+        </body>
+</html>
